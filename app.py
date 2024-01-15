@@ -112,9 +112,16 @@ def login():
 
 @app.route('/logout')
 def logout():
-    """Handle logout of user."""
+    """
+    Handle logout of user.
+    - The current method to logout uses a GET request; however, future iterations should use a POST request as it is more secure.
+    """
 
-    # IMPLEMENT THIS
+    user = g.user
+    do_logout()
+    flash(f"Goodbye {user.username}! See you next time!", "success")
+
+    return redirect('/login')
 
 
 ##############################################################################
