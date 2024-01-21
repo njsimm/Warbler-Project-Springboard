@@ -136,7 +136,7 @@
           return render_template('home-anon.html')
   ```
 
-7. **Files:** `app.py`, `detail.html`, `home.html` `likes.html`
+7. **Files:** `app.py`, `detail.html`, `home.html`, `likes.html`
 
 - Completed "Part Two: Add Likes"
 - Updated Code for `app.py`:
@@ -242,3 +242,8 @@
   ```
 
 - Created `likes.html` in order for a signed in user to view their liked messages.
+
+8. **Files:** `test_user_model.py`, `test_message_model.py`, `test_user_views.py`, `test_message_views.py`
+
+- Completed "Part Three: Add Tests"
+- Added tests to: `test_user_model.py`, `test_message_model.py`, `test_user_views.py`, and `test_message_views.py`
